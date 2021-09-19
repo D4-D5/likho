@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 import ChatBox from './ChatBox';
 import JoinRoom from './JoinRoom';
 
-const socket = io("http://localhost:3001");
+const socket = io("https://sleepy-sierra-20253.herokuapp.com/");
 
 function App() {
 
