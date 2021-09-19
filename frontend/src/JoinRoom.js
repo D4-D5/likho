@@ -1,11 +1,10 @@
-import { Button, Card, FormControl, makeStyles, OutlinedInput } from '@material-ui/core';
-import React, { useState } from 'react'
+import { Button, Card, makeStyles, OutlinedInput } from '@material-ui/core';
+import React from 'react'
 import { ReactComponent as HomeImage } from './assests/images/home_img.svg';
 
 const useStyles = makeStyles({
     inputTextField: {
         width: '100%',
-        backgroundColor: 'white',
         borderRadius: '16px',
         height: '40px',
         marginTop: '8px',
@@ -35,7 +34,7 @@ function JoinRoom({ socket, setShowChat, setRoom, setUserName, userName, room })
     return (
         <div style={{ display: 'flex', justifyContent: 'space-evenly', marginTop: '100px' }}>
             <Card className={classes.inputContainer}>
-                    <h1 style={{ color: 'white', fontSize: '48px', color:'#3f3d56',fontWeight:'bold' }}>Join A Room</h1>
+                    <h1 style={{fontSize: '48px', color:'#3f3d56',fontWeight:'bold' }}>Join A Room</h1>
                     <OutlinedInput
                         className={classes.inputTextField}
                         id="outlined-adornment-weight"

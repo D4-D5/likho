@@ -2,7 +2,6 @@ import './App.css';
 import { useState } from 'react';
 import { io } from 'socket.io-client';
 import ChatBox from './ChatBox';
-import { Button, FormControl, makeStyles, OutlinedInput } from '@material-ui/core';
 import JoinRoom from './JoinRoom';
 
 const socket = io("http://localhost:3001");
